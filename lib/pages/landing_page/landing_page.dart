@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../../providers/home_app_bar_provider.dart';
 import '../../utilities/app_images.dart';
+import '../about_page/about_page.dart';
 import '../home_page/home_page.dart';
 import '../services_page/services_page.dart';
 
@@ -29,7 +30,7 @@ class LandingPage extends StatelessWidget {
                   child: Image.asset(AppImages.logoWhite),
                 ),
                 const SizedBox(width: 8),
-                const Text(
+                const SelectableText(
                   'DevMarkaz',
                   style: TextStyle(
                     color: Colors.white,
@@ -84,7 +85,7 @@ class LandingPage extends StatelessWidget {
               onPressed: () {},
               child: const Padding(
                 padding: EdgeInsets.symmetric(vertical: 8),
-                child: Text(
+                child: SelectableText(
                   'Contact us',
                   style: TextStyle(fontWeight: FontWeight.w700, fontSize: 14),
                 ),
@@ -104,6 +105,10 @@ class LandingPage extends StatelessWidget {
             SizedBox(
               height: size.height - 50,
               child: const ServicesPage(),
+            ),
+            SizedBox(
+              height: size.height - 50,
+              child: const AboutPage(),
             ),
           ],
         ),
@@ -135,7 +140,7 @@ class _ItemButton extends StatelessWidget {
           mainAxisSize: MainAxisSize.max,
           children: <Widget>[
             const SizedBox(height: 2),
-            Text(
+            SelectableText(
               title,
               style: TextStyle(
                 color: Colors.white,

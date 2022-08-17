@@ -40,14 +40,14 @@ class ServiceCard extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
-                    Text(
+                    SelectableText(
                       title,
                       style: const TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    Text(
+                    SelectableText(
                       subtitle,
                       textAlign: TextAlign.center,
                       style: const TextStyle(color: Colors.grey, fontSize: 14),

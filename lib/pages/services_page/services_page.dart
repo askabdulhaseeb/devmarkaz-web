@@ -31,12 +31,12 @@ class ServicesPage extends StatelessWidget {
                       CircularAvatarRow()
                     ],
                   ),
-                  const Text(
+                  const SelectableText(
                     'Our Service',
                     style: TextStyle(
                       fontSize: 32,
                       color: Colors.white,
-                      fontWeight: FontWeight.w500,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                   const SizedBox(width: 120),

@@ -67,9 +67,7 @@ class HomePage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Flexible(
-                    child: Lottie.asset(AppImages.computerJSON),
-                  ),
+                  Flexible(child: Lottie.asset(AppImages.computerJSON)),
                 ],
               ),
             ],
