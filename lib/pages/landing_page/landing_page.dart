@@ -8,6 +8,7 @@ import '../about_page/about_page.dart';
 import '../home_page/home_page.dart';
 import '../projects_page/projects_page.dart';
 import '../services_page/services_page.dart';
+import '../testimony_page/testimony_page.dart';
 
 class LandingPage extends StatelessWidget {
   const LandingPage({Key? key}) : super(key: key);
@@ -115,6 +116,10 @@ class LandingPage extends StatelessWidget {
             SizedBox(
               height: size.height - 50,
               child: const ProjectPage(),
+            ),
+            SizedBox(
+              height: size.height - 50,
+              child: const TestimonyPage(),
             ),
           ],
         ),
