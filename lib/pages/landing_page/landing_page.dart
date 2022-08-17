@@ -140,7 +140,7 @@ class _ItemButton extends StatelessWidget {
           mainAxisSize: MainAxisSize.max,
           children: <Widget>[
             const SizedBox(height: 2),
-            SelectableText(
+            Text(
               title,
               style: TextStyle(
                 color: Colors.white,

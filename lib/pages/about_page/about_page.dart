@@ -42,16 +42,18 @@ class AboutPage extends StatelessWidget {
           Row(
             children: <Widget>[
               Expanded(
+                flex: 2,
                 child: Image.asset(AppImages.logoBlack),
               ),
-              Expanded(
-                flex: 2,
+             const Expanded(
+                flex: 3,
                 child: SelectableText(
                   '''We are a group of highly professional exterts and together as a team, we cover almost all the design and development areas of Mobile Applications, Websites (Both Static and Dynamic) and Desktop Applications. We also provide services in UI/UX designs. Along with all these skillful services, we focus on client’s requirements and most importantly on client’s satisfaction, to build long-term professional relationships with our clients.''',
                   textAlign: TextAlign.justify,
                   style: TextStyle(
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.w300,
                     fontSize: 20,
+                    letterSpacing: 1,
                   ),
                 ),
               ),
