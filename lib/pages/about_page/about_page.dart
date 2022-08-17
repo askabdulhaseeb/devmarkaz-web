@@ -10,6 +10,7 @@ class AboutPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const ResponsiveLayout(
       mobile: SizedBox(),
+      tablet: AboutWebview(),
       desktop: AboutWebview(),
     );
   }

@@ -11,6 +11,7 @@ class TestimonyPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const ResponsiveLayout(
       mobile: SizedBox(),
+      tablet: TestimonyWebview(),
       desktop: TestimonyWebview(),
     );
   }

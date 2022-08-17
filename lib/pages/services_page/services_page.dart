@@ -15,6 +15,7 @@ class ServicesPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const ResponsiveLayout(
       mobile: SizedBox(),
+      tablet: ServicesWebview(),
       desktop: ServicesWebview(),
     );
   }
