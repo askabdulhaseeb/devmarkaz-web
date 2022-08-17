@@ -3,8 +3,10 @@ import 'package:provider/provider.dart';
 
 import '../../providers/home_app_bar_provider.dart';
 import '../../utilities/app_images.dart';
+import '../../widgets/custom_widgets/underline_text_button.dart';
 import '../about_page/about_page.dart';
 import '../home_page/home_page.dart';
+import '../projects_page/projects_page.dart';
 import '../services_page/services_page.dart';
 
 class LandingPage extends StatelessWidget {
@@ -52,27 +54,27 @@ class LandingPage extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
-                    _ItemButton(
+                    UnderlineTextButton(
                       title: items[0],
                       isSelected: itemPro.currentIndex == 0,
                       onTap: () => itemPro.onIndexChange(0),
                     ),
-                    _ItemButton(
+                    UnderlineTextButton(
                       title: items[1],
                       isSelected: itemPro.currentIndex == 1,
                       onTap: () => itemPro.onIndexChange(1),
                     ),
-                    _ItemButton(
+                    UnderlineTextButton(
                       title: items[2],
                       isSelected: itemPro.currentIndex == 2,
                       onTap: () => itemPro.onIndexChange(2),
                     ),
-                    _ItemButton(
+                    UnderlineTextButton(
                       title: items[3],
                       isSelected: itemPro.currentIndex == 3,
                       onTap: () => itemPro.onIndexChange(3),
                     ),
-                    _ItemButton(
+                    UnderlineTextButton(
                       title: items[4],
                       isSelected: itemPro.currentIndex == 4,
                       onTap: () => itemPro.onIndexChange(4),
@@ -110,48 +112,9 @@ class LandingPage extends StatelessWidget {
               height: size.height - 50,
               child: const AboutPage(),
             ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class _ItemButton extends StatelessWidget {
-  const _ItemButton({
-    required this.title,
-    required this.isSelected,
-    required this.onTap,
-    Key? key,
-  }) : super(key: key);
-  final String title;
-  final bool isSelected;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onTap,
-      borderRadius: BorderRadius.circular(12),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 8),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          mainAxisSize: MainAxisSize.max,
-          children: <Widget>[
-            const SizedBox(height: 2),
-            Text(
-              title,
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 16,
-                fontWeight: isSelected ? FontWeight.w800 : FontWeight.w200,
-              ),
-            ),
-            Container(
-              height: 2,
-              width: 20,
-              color: isSelected ? Colors.white : Colors.transparent,
+            SizedBox(
+              height: size.height - 50,
+              child: const ProjectPage(),
             ),
           ],
         ),

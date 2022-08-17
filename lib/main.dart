@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'providers/home_app_bar_provider.dart';
+import 'providers/project_provider.dart';
 import 'routes.dart';
 import 'utilities/app_colors.dart';
 
@@ -23,6 +24,9 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider<HomeAppBarProvider>(
           create: (BuildContext context) => HomeAppBarProvider(),
+        ),
+        ChangeNotifierProvider<ProjectProvider>(
+          create: (BuildContext context) => ProjectProvider(),
         ),
       ],
       child: MaterialApp.router(
