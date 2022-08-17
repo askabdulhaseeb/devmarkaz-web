@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 
 import '../../models/project.dart';
 import '../../providers/project_provider.dart';
-import '../../utilities/app_images.dart';
 import '../../widgets/custom_widgets/underline_text_button.dart';
 import '../../widgets/project_card.dart';
 
@@ -83,6 +82,14 @@ class ProjectWebview extends StatelessWidget {
                 ),
               );
             },
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(32),
+          child: Icon(
+            Icons.keyboard_double_arrow_down,
+            size: 200,
+            color: Theme.of(context).colorScheme.secondary.withOpacity(0.1),
           ),
         )
       ],
