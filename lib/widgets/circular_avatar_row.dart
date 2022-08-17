@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CircularAvatarRow extends StatelessWidget {
-  const CircularAvatarRow({Key? key}) : super(key: key);
+  const CircularAvatarRow({this.color, Key? key}) : super(key: key);
+  final Color? color;
 
   @override
   Widget build(BuildContext context) {
@@ -18,11 +19,11 @@ class CircularAvatarRow extends StatelessWidget {
   }
 
   Widget _smallCircle() {
-    return const Padding(
-      padding: EdgeInsets.only(right: 16, bottom: 16),
+    return Padding(
+      padding: const EdgeInsets.only(right: 16, bottom: 16),
       child: CircleAvatar(
         radius: 4,
-        backgroundColor: Colors.white24,
+        backgroundColor: color ?? Colors.white24,
       ),
     );
   }

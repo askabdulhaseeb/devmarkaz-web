@@ -78,6 +78,35 @@ class ServicesPage extends StatelessWidget {
             ],
           ),
         ),
+        Positioned(
+          bottom: 0,
+          right: Utilities.padding,
+          child: Column(
+            children: <Widget>[
+              CircularAvatarRow(
+                color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
+              ),
+              CircularAvatarRow(
+                color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
+              ),
+              CircularAvatarRow(
+                color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
+              ),
+              CircularAvatarRow(
+                color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
+              ),
+              CircularAvatarRow(
+                color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
+              ),
+              CircularAvatarRow(
+                color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
+              ),
+              CircularAvatarRow(
+                color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
+              ),
+            ],
+          ),
+        ),
       ],
     );
   }
