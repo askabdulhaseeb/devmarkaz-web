@@ -22,7 +22,9 @@ dependencies:
   provider: ^6.0.3
 
   extended_image: ^6.2.1
+  lottie: ^1.4.1
   intl: ^0.17.0
+  auto_size_text: ^3.0.0
 
   carousel_slider: ^4.1.1
 
