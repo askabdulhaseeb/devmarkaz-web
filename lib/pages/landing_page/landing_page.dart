@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../../providers/home_app_bar_provider.dart';
 import '../../utilities/app_images.dart';
 import '../home_page/home_page.dart';
+import '../services_page/services_page.dart';
 
 class LandingPage extends StatelessWidget {
   const LandingPage({Key? key}) : super(key: key);
@@ -98,7 +99,11 @@ class LandingPage extends StatelessWidget {
           children: <Widget>[
             SizedBox(
               height: size.height - 50,
-              child: HomePage(),
+              child: const HomePage(),
+            ),
+            SizedBox(
+              height: size.height - 50,
+              child: const ServicesPage(),
             ),
           ],
         ),
