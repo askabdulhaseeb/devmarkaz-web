@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../widgets/custom_widgets/responsive_layout.dart';
+import 'footer_mobileview.dart';
 import 'footer_webview.dart';
 
 class Footer extends StatelessWidget {
@@ -9,7 +10,7 @@ class Footer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const ResponsiveLayout(
-      mobile: SizedBox(),
+      mobile: FooterMobileview(),
       tablet: FooterWebview(),
       desktop: FooterWebview(),
     );
