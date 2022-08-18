@@ -7,6 +7,7 @@ import '../../utilities/app_images.dart';
 import '../../utilities/utilities.dart';
 import '../../widgets/circular_avatar_row.dart';
 import '../../widgets/custom_widgets/responsive_layout.dart';
+import 'home_mobileview.dart';
 import 'home_webview.dart';
 
 class HomePage extends StatelessWidget {
@@ -16,7 +17,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const ResponsiveLayout(
-      mobile: SizedBox(),
+      mobile: HomeMobileview(),
       tablet: HomeWebview(),
       desktop: HomeWebview(),
     );

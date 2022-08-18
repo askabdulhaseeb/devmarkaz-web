@@ -74,7 +74,7 @@ class HomeWebview extends StatelessWidget {
                             color: Colors.white60,
                             fontWeight: FontWeight.w300,
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),
