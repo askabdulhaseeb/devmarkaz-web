@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../widgets/custom_widgets/responsive_layout.dart';
+import 'about_mobileview.dart';
 import 'about_webview.dart';
 
 class AboutPage extends StatelessWidget {
@@ -9,7 +10,7 @@ class AboutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const ResponsiveLayout(
-      mobile: SizedBox(),
+      mobile: AboutMobileview(),
       tablet: AboutWebview(),
       desktop: AboutWebview(),
     );
