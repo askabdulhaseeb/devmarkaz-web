@@ -7,16 +7,18 @@ class ServiceCard extends StatelessWidget {
     required this.title,
     required this.subtitle,
     required this.imagePath,
+    this.padding,
     Key? key,
   }) : super(key: key);
   final String title;
   final String subtitle;
   final String imagePath;
+  final EdgeInsetsGeometry? padding;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 64),
+      padding:padding?? const EdgeInsets.only(left: 64),
       child: Card(
         elevation: 2,
         child: Container(

@@ -17,9 +17,12 @@ class HomeMobileview extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.all(16),
-              child: LottieBuilder.asset(AppImages.computerJSON),
+            AspectRatio(
+              aspectRatio: 4 / 3,
+              child: Padding(
+                padding: const EdgeInsets.all(16),
+                child: LottieBuilder.asset(AppImages.computerJSON),
+              ),
             ),
             Row(
               children: <Widget>[
@@ -36,11 +39,11 @@ class HomeMobileview extends StatelessWidget {
                   child: AutoSizeText(
                     'WE BUILD SOFTWARE TO AUTOMATE ALL YOUR OPERATIONS WITH A SEAMLESS EXPERIENCE.',
                     maxLines: 4,
-                    maxFontSize: 24,
+                    maxFontSize: 20,
                     minFontSize: 16,
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 24,
+                      fontSize: 20,
                       fontWeight: FontWeight.w500,
                     ),
                   ),
@@ -51,7 +54,6 @@ class HomeMobileview extends StatelessWidget {
               '''We are DevMarkaz and we are a team of highly professional experts in the software development market. Our software house is capable of developing all types of software applications for Mobile, Web, and Desktop with the best technologies that exist today.''',
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 18,
                 color: Colors.white60,
                 fontWeight: FontWeight.w300,
               ),

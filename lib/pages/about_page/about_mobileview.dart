@@ -23,9 +23,9 @@ class AboutMobileview extends StatelessWidget {
             const SelectableText(
               '''We are a group of highly professional exterts and together as a team, we cover almost all the design and development areas of Mobile Applications, Websites (Both Static and Dynamic) and Desktop Applications. We also provide services in UI/UX designs. Along with all these skillful services, we focus on client’s requirements and most importantly on client’s satisfaction, to build long-term professional relationships with our clients.''',
               textAlign: TextAlign.justify,
+              maxLines: 7,
               style: TextStyle(
                 fontWeight: FontWeight.w300,
-                fontSize: 20,
                 letterSpacing: 1,
               ),
             ),
