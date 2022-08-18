@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "340247617516",
+    "project_id": "dev-markaz",
+    "storage_bucket": "dev-markaz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340247617516:android:f0c94a184518e914e92ac9",
+        "android_client_info": {
+          "package_name": "com.devmarkaz.devmarkaz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340247617516-95e35k0t3skvclt6scjv7p1kspo3gq2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrWli2QO2fsU9dw83fkxzV2TEYo_d8oTM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340247617516-95e35k0t3skvclt6scjv7p1kspo3gq2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

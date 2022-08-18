@@ -1,6 +1,8 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import 'firebase_options.dart';
 import 'providers/home_app_bar_provider.dart';
 import 'providers/project_provider.dart';
 import 'routes.dart';
@@ -8,9 +10,9 @@ import 'utilities/app_colors.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // await Firebase.initializeApp(
-  //   options: DefaultFirebaseOptions.currentPlatform,
-  // );
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -54,3 +56,8 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+// Platform  Firebase App Id
+// web       1:340247617516:web:cf306fcc718ec4b5e92ac9
+// android   1:340247617516:android:f0c94a184518e914e92ac9
+// ios       1:340247617516:ios:34a8fac2aeac4eb2e92ac9
