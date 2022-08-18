@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../widgets/custom_widgets/responsive_layout.dart';
+import 'testimony_mobileview.dart';
 import 'testimony_webview.dart';
 
 class TestimonyPage extends StatelessWidget {
@@ -10,7 +11,7 @@ class TestimonyPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const ResponsiveLayout(
-      mobile: SizedBox(),
+      mobile: TestimonyMobileviwe(),
       tablet: TestimonyWebview(),
       desktop: TestimonyWebview(),
     );
