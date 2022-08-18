@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../utilities/app_colors.dart';
-import '../../utilities/app_images.dart';
-import '../../utilities/utilities.dart';
-import '../../widgets/circular_avatar_row.dart';
 import '../../widgets/custom_widgets/responsive_layout.dart';
-import '../../widgets/service_card.dart';
+import 'services_mobileview.dart';
 import 'services_webview.dart';
 
 class ServicesPage extends StatelessWidget {
@@ -14,7 +10,7 @@ class ServicesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const ResponsiveLayout(
-      mobile: SizedBox(),
+      mobile: ServicesMobileview(),
       tablet: ServicesWebview(),
       desktop: ServicesWebview(),
     );
