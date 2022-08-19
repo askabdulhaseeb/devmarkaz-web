@@ -61,3 +61,6 @@ class MyApp extends StatelessWidget {
 // web       1:340247617516:web:cf306fcc718ec4b5e92ac9
 // android   1:340247617516:android:f0c94a184518e914e92ac9
 // ios       1:340247617516:ios:34a8fac2aeac4eb2e92ac9
+
+// flutter build web
+// firebase deploy --only hosting

@@ -6,7 +6,7 @@ import 'project_webview.dart';
 
 class ProjectPage extends StatelessWidget {
   const ProjectPage({Key? key}) : super(key: key);
-  static const String route = '/projects';
+  static const String route = 'projects';
 
   @override
   Widget build(BuildContext context) {

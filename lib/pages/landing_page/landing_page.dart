@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
-import '../../providers/home_app_bar_provider.dart';
-import '../../utilities/app_images.dart';
 import '../../widgets/custom_widgets/responsive_layout.dart';
-import '../../widgets/custom_widgets/underline_text_button.dart';
 import '../about_page/about_page.dart';
 import '../footer/footer.dart';
 import '../home_page/home_page.dart';

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../functions/responsive_function.dart';
-
 class ResponsiveLayout extends StatelessWidget {
   const ResponsiveLayout({
     required this.mobile,
@@ -18,12 +16,12 @@ class ResponsiveLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (BuildContext context, BoxConstraints constraints) {
-        if (constraints.maxWidth >= ResponsiveFunctions.tabletMaxWidth) {
+        if (constraints.maxWidth >= 1200) {
           return desktop ??
               const Center(
                 child: Text('Desktop version not able yet'),
               );
-        } else if (constraints.maxWidth >= ResponsiveFunctions.mobileMaxWidth) {
+        } else if (constraints.maxWidth >= 600) {
           return tablet ??
               const Center(
                 child: Text('Tablet version not able yet'),

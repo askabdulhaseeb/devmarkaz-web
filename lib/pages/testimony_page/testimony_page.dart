@@ -6,7 +6,7 @@ import 'testimony_webview.dart';
 
 class TestimonyPage extends StatelessWidget {
   const TestimonyPage({Key? key}) : super(key: key);
-  static const String route = '/testimonies';
+  static const String route = 'testimonies';
 
   @override
   Widget build(BuildContext context) {

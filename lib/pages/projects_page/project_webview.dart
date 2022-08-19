@@ -88,7 +88,7 @@ class ProjectWebview extends StatelessWidget {
           padding: const EdgeInsets.all(32),
           child: Icon(
             Icons.keyboard_double_arrow_down,
-            size: 200,
+            size: 120,
             color: Theme.of(context).colorScheme.secondary.withOpacity(0.1),
           ),
         )

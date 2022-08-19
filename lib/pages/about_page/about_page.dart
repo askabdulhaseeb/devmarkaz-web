@@ -6,6 +6,7 @@ import 'about_webview.dart';
 
 class AboutPage extends StatelessWidget {
   const AboutPage({Key? key}) : super(key: key);
+  static const String route = 'about';
 
   @override
   Widget build(BuildContext context) {

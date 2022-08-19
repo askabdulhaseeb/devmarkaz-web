@@ -6,6 +6,7 @@ import 'footer_webview.dart';
 
 class Footer extends StatelessWidget {
   const Footer({Key? key}) : super(key: key);
+  static const String route = 'footer';
 
   @override
   Widget build(BuildContext context) {

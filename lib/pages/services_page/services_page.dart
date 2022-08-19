@@ -6,6 +6,7 @@ import 'services_webview.dart';
 
 class ServicesPage extends StatelessWidget {
   const ServicesPage({Key? key}) : super(key: key);
+  static const String route = 'services';
 
   @override
   Widget build(BuildContext context) {
