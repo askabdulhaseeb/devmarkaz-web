@@ -11,16 +11,16 @@ class AboutMobileview extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: const <Widget>[
-            SelectableText(
+          children:  <Widget>[
+            const SelectableText(
               'About Us',
               style: TextStyle(
                 fontSize: 32,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            // Image.asset(AppImages.services),
-            SelectableText(
+            Image.asset(AppImages.services),
+            const SelectableText(
               '''We are a group of highly professional exterts and together as a team, we cover almost all the design and development areas of Mobile Applications, Websites (Both Static and Dynamic) and Desktop Applications. We also provide services in UI/UX designs. Along with all these skillful services, we focus on client’s requirements and most importantly on client’s satisfaction, to build long-term professional relationships with our clients.''',
               textAlign: TextAlign.justify,
               maxLines: 7,

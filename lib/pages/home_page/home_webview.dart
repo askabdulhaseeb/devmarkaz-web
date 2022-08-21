@@ -78,7 +78,7 @@ class HomeWebview extends StatelessWidget {
                       ],
                     ),
                   ),
-                  // Flexible(child: Lottie.asset(AppImages.computerJSON)),
+                  Flexible(child: Image.asset(AppImages.computerJSON)),
                 ],
               ),
             ],

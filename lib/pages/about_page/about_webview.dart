@@ -5,9 +5,7 @@ import '../../utilities/utilities.dart';
 import '../../widgets/circular_avatar_row.dart';
 
 class AboutWebview extends StatelessWidget {
-  const AboutWebview({
-    Key? key,
-  }) : super(key: key);
+  const AboutWebview({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -42,14 +40,14 @@ class AboutWebview extends StatelessWidget {
           ),
           const SizedBox(height: 30),
           Row(
-            children: const <Widget>[
-              // Expanded(
-              //   flex: 2,
-              //   child: Image.asset(AppImages.services),
-              // ),
-              SizedBox(width: 16),
+            children: <Widget>[
               Expanded(
-                //   flex: 3,
+                flex: 2,
+                child: Image.asset(AppImages.services),
+              ),
+              const SizedBox(width: 16),
+              const Expanded(
+                flex: 3,
                 child: SelectableText(
                   '''We are a group of highly professional exterts and together as a team, we cover almost all the design and development areas of Mobile Applications, Websites (Both Static and Dynamic) and Desktop Applications. We also provide services in UI/UX designs. Along with all these skillful services, we focus on client’s requirements and most importantly on client’s satisfaction, to build long-term professional relationships with our clients.''',
                   textAlign: TextAlign.justify,
