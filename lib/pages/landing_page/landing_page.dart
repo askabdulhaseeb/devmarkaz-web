@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../utilities/app_colors.dart';
 import '../../widgets/custom_widgets/responsive_layout.dart';
 import '../about_page/about_page.dart';
 import '../footer/footer.dart';
@@ -18,6 +19,7 @@ class LandingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     return Scaffold(
+      backgroundColor: AppColors.lightPrimary,
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.secondary,
         centerTitle: true,
