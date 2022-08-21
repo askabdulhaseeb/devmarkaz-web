@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import 'admin/screens/dashboard/dashboard.dart';
+import 'admin/screens/login/login.dart';
 import 'pages/about_page/about_page.dart';
 import 'pages/footer/footer.dart';
 import 'pages/home_page/home_page.dart';
@@ -47,6 +49,20 @@ final GoRouter router = GoRouter(
           path: Footer.route,
           builder: (BuildContext context, GoRouterState state) =>
               const Footer(),
+        ),
+
+        //
+        // ADMIN
+        //
+        GoRoute(
+          path: AdminLogin.route,
+          builder: (BuildContext context, GoRouterState state) =>
+              const AdminLogin(),
+        ),
+        GoRoute(
+          path: Dashboard.route,
+          builder: (BuildContext context, GoRouterState state) =>
+              const Dashboard(),
         ),
       ],
     ),
