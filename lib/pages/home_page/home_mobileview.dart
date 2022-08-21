@@ -17,13 +17,13 @@ class HomeMobileview extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            AspectRatio(
-              aspectRatio: 4 / 3,
-              child: Padding(
-                padding: const EdgeInsets.all(16),
-                child: LottieBuilder.asset(AppImages.computerJSON),
-              ),
-            ),
+            // AspectRatio(
+            //   aspectRatio: 4 / 3,
+            //   child: Padding(
+            //     padding: const EdgeInsets.all(16),
+            //     child: LottieBuilder.asset(AppImages.computerJSON),
+            //   ),
+            // ),
             Row(
               children: <Widget>[
                 CircleAvatar(

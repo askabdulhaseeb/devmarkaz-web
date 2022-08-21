@@ -2,8 +2,8 @@ class AppImages {
   //
   // LOGOS
   //
-  static const String logoBlack = 'assets/logos/logo-black.webp';
-  static const String logoWhite = 'assets/logos/logo-black.webp';
+  static const String logoBlack = 'assets/logos/logo-black.png';
+  static const String logoWhite = 'assets/logos/logo-white.png';
 
   //
   // IMAGES
