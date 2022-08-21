@@ -18,7 +18,7 @@ class ServiceCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding:padding?? const EdgeInsets.only(left: 64),
+      padding: padding ?? const EdgeInsets.only(left: 64),
       child: Card(
         elevation: 2,
         child: Container(
@@ -32,10 +32,7 @@ class ServiceCard extends StatelessWidget {
           child: Column(
             children: <Widget>[
               Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.all(16),
-                  child: Image.asset(AppImages.logoBlack),
-                ),
+                child: Image.asset(imagePath),
               ),
               Expanded(
                 flex: 1,

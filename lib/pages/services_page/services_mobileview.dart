@@ -33,28 +33,28 @@ class ServicesMobileview extends StatelessWidget {
                   primary: false,
                   children: const <Widget>[
                     ServiceCard(
-                      imagePath: AppImages.logoBlack,
+                      imagePath: AppImages.mobileGIF,
                       title: 'App Development',
                       subtitle:
                           'We are capable of delivering native, as well as hybrid mobile applications as per the requirments of our clients.',
                       padding: EdgeInsets.all(32),
                     ),
                     ServiceCard(
-                      imagePath: AppImages.logoBlack,
+                      imagePath: AppImages.websiteGIF,
                       title: 'Web Development',
                       subtitle:
                           'We are capable of delivering static, as well as dynamic websites as per the requirments of our clients.',
                       padding: EdgeInsets.all(32),
                     ),
                     ServiceCard(
-                      imagePath: AppImages.logoBlack,
+                      imagePath: AppImages.desktopGIF,
                       title: 'Desktop Developer',
                       subtitle:
                           'We are capable of delivering the desktop applications (for windows/mac/linux) as per the requirments of our clients.',
                       padding: EdgeInsets.all(32),
                     ),
                     ServiceCard(
-                      imagePath: AppImages.logoBlack,
+                      imagePath: AppImages.uiGIF,
                       title: 'UI/UX Design',
                       subtitle:
                           'We are capable of delivering Adobe XD and Figma designs for an interactive and responsive applications or websites as per requirments of our clients.',

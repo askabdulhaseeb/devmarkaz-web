@@ -11,6 +11,15 @@ class AppImages {
   static const String services = 'assets/images/services.png';
 
   //
+  // GIFS
+  //
+  static const String computerGIF = 'assets/gifs/computer.gif';
+  static const String desktopGIF = 'assets/gifs/desktop.gif';
+  static const String mobileGIF = 'assets/gifs/mobile.gif';
+  static const String uiGIF = 'assets/gifs/ui.gif';
+  static const String websiteGIF = 'assets/gifs/website.gif';
+
+  //
   // JSONS
   //
   static const String computerJSON = 'assets/images/computer.gif';

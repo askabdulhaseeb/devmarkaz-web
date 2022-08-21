@@ -31,56 +31,52 @@ class HomeWebview extends StatelessWidget {
         // ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 64),
-          child: Column(
+          child: Row(
             children: <Widget>[
-              const SizedBox(height: 40),
-              Row(
-                children: <Widget>[
-                  SizedBox(
-                    width: size.width / 2,
-                    child: Column(
+              SizedBox(
+                width: size.width / 2,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Row(
                       children: <Widget>[
-                        Row(
-                          children: <Widget>[
-                            CircleAvatar(
-                              radius: 80,
-                              backgroundColor: Colors.white,
-                              child: SizedBox(
-                                height: 120,
-                                child: Image.asset(AppImages.logoBlack),
-                              ),
-                            ),
-                            const SizedBox(width: 16),
-                            const Flexible(
-                              child: AutoSizeText(
-                                'WE BUILD SOFTWARE TO\nAUTOMATE ALL YOUR OPERATIONS\nWITH A SEAMLESS EXPERIENCE.',
-                                maxLines: 4,
-                                maxFontSize: 30,
-                                minFontSize: 18,
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 28,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                              ),
-                            ),
-                          ],
+                        CircleAvatar(
+                          radius: 80,
+                          backgroundColor: Colors.white,
+                          child: SizedBox(
+                            height: 120,
+                            child: Image.asset(AppImages.logoBlack),
+                          ),
                         ),
-                        const SizedBox(height: 10),
-                        const SelectableText(
-                          '''We are DevMarkaz and we are a team of highly professional experts in the software development market. Our software house is capable of developing all types of software applications for Mobile, Web, and Desktop with the best technologies that exist today.''',
-                          style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.white60,
-                            fontWeight: FontWeight.w300,
+                        const SizedBox(width: 16),
+                        const Flexible(
+                          child: AutoSizeText(
+                            'WE BUILD SOFTWARE TO\nAUTOMATE ALL YOUR OPERATIONS\nWITH A SEAMLESS EXPERIENCE.',
+                            maxLines: 4,
+                            maxFontSize: 30,
+                            minFontSize: 18,
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 28,
+                              fontWeight: FontWeight.w500,
+                            ),
                           ),
                         ),
                       ],
                     ),
-                  ),
-                  Flexible(child: Image.asset(AppImages.computerJSON)),
-                ],
+                    const SizedBox(height: 16),
+                    const SelectableText(
+                      '''We are DevMarkaz and we are a team of highly professional experts in the software development market. Our software house is capable of developing all types of software applications for Mobile, Web, and Desktop with the best technologies that exist today.''',
+                      style: TextStyle(
+                        fontSize: 18,
+                        color: Colors.white60,
+                        fontWeight: FontWeight.w300,
+                      ),
+                    ),
+                  ],
+                ),
               ),
+              Flexible(child: Image.asset(AppImages.computerGIF)),
             ],
           ),
         ),

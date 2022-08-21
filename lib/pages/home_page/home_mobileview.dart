@@ -20,8 +20,8 @@ class HomeMobileview extends StatelessWidget {
             AspectRatio(
               aspectRatio: 4 / 3,
               child: Padding(
-                padding: const EdgeInsets.all(16),
-                child: Image.asset(AppImages.computerJSON),
+                padding: const EdgeInsets.all(8),
+                child: Image.asset(AppImages.computerGIF),
               ),
             ),
             Row(
