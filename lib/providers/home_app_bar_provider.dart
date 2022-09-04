@@ -6,12 +6,13 @@ class HomeAppBarProvider extends ChangeNotifier {
     _itemPositionsListener.itemPositions.addListener(() {
       final List<int> page = _itemPositionsListener.itemPositions.value
           .where((ItemPosition element) {
-            final bool top = element.itemLeadingEdge >= 0;
+            final bool top = element.itemLeadingEdge >= 2;
             final bool bottom = element.itemTrailingEdge <= 1;
             return top && bottom;
           })
           .map((ItemPosition e) => e.index)
           .toList();
+
       if (page.isNotEmpty) _shift(page[0]);
     });
   }

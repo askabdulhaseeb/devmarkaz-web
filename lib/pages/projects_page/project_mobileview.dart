@@ -1,3 +1,4 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -64,27 +65,25 @@ class ProjectMobileview extends StatelessWidget {
             }),
           ),
         ),
-        Consumer<ProjectProvider>(
-          builder: (BuildContext context, ProjectProvider projPro, _) {
-            final List<Project> projects = projPro.filteredProject();
-            return Expanded(
-              child: ListView.separated(
-                primary: false,
-                itemCount: projects.length,
-                separatorBuilder: (BuildContext context, _) =>
-                    const SizedBox(height: 16),
-                itemBuilder: (BuildContext context, int index) {
-                  return AspectRatio(
-                    aspectRatio: 4 / 3,
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 32),
-                      child: ProjectCard(project: projects[index]),
-                    ),
-                  );
-                },
-              ),
-            );
-          },
+        SizedBox(
+          height: MediaQuery.of(context).size.height - 200,
+          width: double.infinity,
+          child: Consumer<ProjectProvider>(
+            builder: (BuildContext context, ProjectProvider projPro, _) {
+              final List<Project> projects = projPro.filteredProject();
+              return CarouselSlider(
+                items: projects
+                    .map((Project pro) => ProjectCard(project: pro))
+                    .toList(),
+                options: CarouselOptions(
+                  aspectRatio: 4 / 3,
+                  viewportFraction: 0.5,
+                  enlargeCenterPage: true,
+                  enableInfiniteScroll: false,
+                ),
+              );
+            },
+          ),
         ),
       ],
     );
