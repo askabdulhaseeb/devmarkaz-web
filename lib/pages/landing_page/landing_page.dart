@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
-import '../../utilities/app_colors.dart';
+import '../../providers/home_app_bar_provider.dart';
 import '../../widgets/custom_widgets/responsive_layout.dart';
 import '../about_page/about_page.dart';
 import '../footer/footer.dart';
@@ -18,8 +20,15 @@ class LandingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
+    const List<Widget> pages = <Widget>[
+      HomePage(),
+      ServicesPage(),
+      ProjectPage(),
+      TestimonyPage(),
+      AboutPage(),
+      Footer(),
+    ];
     return Scaffold(
-      backgroundColor: AppColors.lightPrimary,
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.secondary,
         centerTitle: true,
@@ -28,33 +37,21 @@ class LandingPage extends StatelessWidget {
           desktop: LadingAppBarWebview(size: size),
         ),
       ),
-      body: SizedBox(
-        height: size.height,
-        child: ListView(
-          children: <Widget>[
-            SizedBox(
-              height: size.height - 50,
-              child: const HomePage(),
-            ),
-            SizedBox(
-              height: size.height - 50,
-              child: const ServicesPage(),
-            ),
-            SizedBox(
-              height: size.height - 50,
-              child: const AboutPage(),
-            ),
-            SizedBox(
-              height: size.height - 50,
-              child: const ProjectPage(),
-            ),
-            SizedBox(
-              height: size.height - 50,
-              child: const TestimonyPage(),
-            ),
-            const Footer(),
-          ],
-        ),
+      body: Consumer<HomeAppBarProvider>(
+        builder: (BuildContext context, HomeAppBarProvider homePro, _) {
+          return ScrollablePositionedList.builder(
+            itemCount: pages.length,
+            itemBuilder: (BuildContext context, int index) =>
+                index == (pages.length - 1)
+                    ? const Footer()
+                    : SizedBox(
+                        height: size.height - 50,
+                        child: pages[index],
+                      ),
+            itemScrollController: homePro.itemScrollController,
+            itemPositionsListener: homePro.itemPositionsListener,
+          );
+        },
       ),
     );
   }

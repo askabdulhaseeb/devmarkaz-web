@@ -5,7 +5,6 @@ import '../../providers/home_app_bar_provider.dart';
 import '../../utilities/app_images.dart';
 import '../../widgets/custom_widgets/underline_text_button.dart';
 
-
 class LadingAppBarWebview extends StatelessWidget {
   const LadingAppBarWebview({required this.size, Key? key}) : super(key: key);
 
