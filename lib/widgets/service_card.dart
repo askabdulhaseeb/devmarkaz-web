@@ -32,10 +32,11 @@ class ServiceCard extends StatelessWidget {
           child: Column(
             children: <Widget>[
               Expanded(
+                flex: 3,
                 child: Image.asset(imagePath),
               ),
               Expanded(
-                flex: 1,
+                flex: 4,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[

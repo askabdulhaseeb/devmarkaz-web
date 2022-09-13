@@ -1,6 +1,5 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
 
 import '../../utilities/app_colors.dart';
 import '../../utilities/app_images.dart';
@@ -13,16 +12,13 @@ class HomeMobileview extends StatelessWidget {
     return Container(
       color: AppColors.lightPrimary,
       child: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             AspectRatio(
               aspectRatio: 4 / 3,
-              child: Padding(
-                padding: const EdgeInsets.all(8),
-                child: Image.asset(AppImages.computerGIF),
-              ),
+              child: Image.asset(AppImages.computerGIF),
             ),
             Row(
               children: <Widget>[
@@ -61,7 +57,7 @@ class HomeMobileview extends StatelessWidget {
             ElevatedButton(
               onPressed: () {},
               child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: 12),
+                padding: const EdgeInsets.symmetric(vertical: 8),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: const <Widget>[
