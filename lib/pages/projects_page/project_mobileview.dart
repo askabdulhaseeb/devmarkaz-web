@@ -14,7 +14,7 @@ class ProjectMobileview extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        const SizedBox(height: 20),
+        const SizedBox(height: 30),
         const SelectableText(
           'Our Projects',
           style: TextStyle(

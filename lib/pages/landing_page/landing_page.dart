@@ -41,13 +41,13 @@ class LandingPage extends StatelessWidget {
         builder: (BuildContext context, HomeAppBarProvider homePro, _) {
           return ScrollablePositionedList.builder(
             itemCount: pages.length,
-            itemBuilder: (BuildContext context, int index) =>
-                index == (pages.length - 1)
-                    ? const Footer()
-                    : SizedBox(
-                        height: size.height - 50,
-                        child: pages[index],
-                      ),
+            itemBuilder: (BuildContext context, int index) => index ==
+                    (pages.length - 1)
+                ? const Footer()
+                : SizedBox(
+                    height: index == 1 || index == 2 ? null : size.height - 50,
+                    child: pages[index],
+                  ),
             itemScrollController: homePro.itemScrollController,
             itemPositionsListener: homePro.itemPositionsListener,
           );
