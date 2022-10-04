@@ -15,7 +15,7 @@ import 'landing_appbar_webview.dart';
 
 class LandingPage extends StatelessWidget {
   const LandingPage({Key? key}) : super(key: key);
-  static const String route = '/';
+  static const String route = '/landingpage';
 
   @override
   Widget build(BuildContext context) {

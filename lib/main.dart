@@ -38,6 +38,7 @@ class MyApp extends StatelessWidget {
         routerDelegate: router.routerDelegate,
         title: 'Dev Markar',
         theme: ThemeData(
+          useMaterial3: true,
           scaffoldBackgroundColor: Colors.white,
           colorScheme: const ColorScheme(
             brightness: Brightness.light,
